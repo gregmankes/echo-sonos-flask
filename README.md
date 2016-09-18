@@ -72,3 +72,24 @@ ngrok http 5000
 ```
 
 PROFIT!!!
+
+SIDE NOTES:
+To interface with alexa, you would say:
+```
+Alexa, tell <skill_name> to <command_name>
+```
+
+You are only able to do basic control functions (this is really just so I can control pandora on sonos with voice). The available control functions thus far are:
+* play
+* pause (accessible with "stop" as well)
+* next
+* volume up (accessible with "pump up the jams" as well)
+* volume down (accessible with "pipe it down" as well)
+
+The computer that you are running this from must be on the same network as your sonos speakers. It will work if you are using a bridge or boost setup.
+
+REFERENCE MATERIAL:
+
+[SoCo UPnP Library](https://github.com/SoCo/SoCo)
+
+[flask-ask python framework](https://github.com/johnwheeler/flask-ask)
