@@ -10,7 +10,7 @@ devices = []
 VOLUME_CHANGE = 10
 
 def setup(internal_counter=0):
-    devices = []
+    kill()
     internal_counter += 1
     for zone in soco.discover():
         devices.append(zone)
@@ -58,6 +58,10 @@ def volume_down():
     for zone in devices:
         zone.volume -= VOLUME_CHANGE
     return statement("")
+
+def kill():
+    for item in devices:
+        del item
 
 if __name__ == '__main__':
     setup()
