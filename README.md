@@ -61,4 +61,14 @@ VolumeDownIntent pipe it down
 StopIntent stop
 ```
 
+Run the flask app
+```
+python controller.py
+```
+
+Run ngrok
+```
+ngrok http 5000
+```
+
 PROFIT!!!
