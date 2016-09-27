@@ -38,7 +38,7 @@ def pause():
 
 @ask.intent("StopIntent")
 def stop():
-    pause()
+    return pause()
 
 @ask.intent("AMAZON.NextIntent")
 def next():
