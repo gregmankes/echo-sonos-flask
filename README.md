@@ -70,6 +70,7 @@ Run ngrok
 ```
 ngrok http 5000
 ```
+Copy the ngrok https url to global endpoint
 
 PROFIT!!!
 
